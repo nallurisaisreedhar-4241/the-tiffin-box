@@ -1,0 +1,132 @@
+
+.about {
+  background: #121212;
+  padding-block: 108px;
+  
+}
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.about-wrap {
+  display: grid;
+  align-items: stretch;
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+
+.about-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            
+  min-height: 520px;
+}
+
+
+.about-panel {
+  background: #FCB017;          
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 48px;
+}
+
+.about-body {
+  width: min(626px, 100%);     
+}
+
+
+.about-kicker {
+  margin: 0 0 16px 0;
+  font-size: 12px;
+  letter-spacing: 0.28em;         
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.8;
+}
+
+
+.about-title {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 150%;
+  letter-spacing: 20px;
+  font-size: clamp(18px, 2.2vw, 22px); 
+}
+
+
+.about-cta {
+  margin-top: 28px;
+  height: 44px;
+  padding: 0 18px 0 16px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background: transparent;
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 180ms ease, opacity 180ms ease;
+  will-change: transform;
+}
+
+.about-cta .chev {
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 180ms ease;
+}
+
+.about-cta:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.about-cta:hover .chev {
+  transform: translateX(2px);
+}
+
+/* responsive behavior */
+@media (max-width: 1024px) {
+  .about-wrap {
+    grid-template-columns: 1fr;
+  }
+  .about-panel {
+    padding: 48px 28px;
+  }
+  .about-title {
+    letter-spacing: 14px;         /* keep readability on smaller screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding-block: 32px;
+  }
+  .about-title {
+    letter-spacing: 10px;
+    line-height: 1.5;
+  }
+  .about-cta {
+    height: 42px;
+  }
+}
+
+/* motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .about-cta { transition: none !important; }
+}
