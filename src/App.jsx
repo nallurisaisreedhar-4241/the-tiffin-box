@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Home from './home.jsx'
+import Home from './Home.jsx'
 import About from './Components/About/About.jsx'
 import Menu from './Components/Menu/Menu.jsx'
 import Online from './Components/Online/Online.jsx'
