@@ -1,6 +1,6 @@
 // src/components/Chef.jsx
 import React from 'react'
-import './Chef.css'
+import '../Chef/Chef.css'
 import chef from '../assets/chef.png'
 import spoon from '../assets/spoon.png'
 import background from '../assets/background.png'

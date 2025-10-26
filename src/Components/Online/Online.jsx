@@ -1,5 +1,5 @@
 import React from "react";
-import "./online.css";
+import "../Online/Online.css";
 import delivery from '../assets/delivery.png'
 
 const Online = () => {

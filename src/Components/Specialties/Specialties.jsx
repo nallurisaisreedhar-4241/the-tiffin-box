@@ -1,5 +1,5 @@
 import React from "react";
-import "./Specialties.css";
+import "../Specialties/Specialties.css";
 import tiffinbox from "../assets/tiffinbox.png";
 
 const Specialties = () => {

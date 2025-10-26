@@ -1,5 +1,5 @@
 import React from 'react'
-import './Menu.css'
+import '../Menu/Menu.css'
 import menu from '../assets/menu.png'
 
 const Menu = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dinein.css";
+import '../Dinein/Dinein.css';
 import booktabel from "../assets/booktabel.png";
 
 const Dinein = () => {
